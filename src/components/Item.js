@@ -7,7 +7,7 @@ function Item({ name, category }) {
 		setInCart(!inCart);
 	}
 	return (
-		<li className={inCart ? 'in-cart' : ''}>
+		<li className={inCart ? '' : 'in-cart'}>
 			<span>{name}</span>
 			<span className="category">{category}</span>
 			<button onClick={handleCart} className="add">
